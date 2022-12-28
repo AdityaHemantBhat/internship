@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+
+    <div>
+        <div>
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="index.php">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#candidate">CANDIDATE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a style="pointer-events: none" class="btn" href="login.php">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="signupFrm">
+        <form class="form">
+            <h1>Create Profile</h1>
+
+            <div class="inputContainer">
+                <input class="input" type="text" placeholder="">
+                <label class="label">Full Name</label>
+            </div>
+
+            <div class="inputContainer">
+                <input class="input" type="date" placeholder="">
+                <label class="label">Birthdate</label>
+            </div>
+
+            <div class="inputContainer">
+                <div class="radio">
+                <label>Gender:</label>&nbsp;&nbsp;&nbsp;
+                <input class="" id="male" type="radio" placeholder="">
+                <label class="" for="male">Male</label>&nbsp;&nbsp;&nbsp;
+                <input class="" id="female" type="radio" placeholder="">
+                <label class="" for="female">Female</label>&nbsp;&nbsp;&nbsp;
+                <input class="" id="others" type="radio" placeholder="">
+                <label class="" for="others">Others</label>
+            </div>
+            </div>
+            <p>Degree</p>
+            <div class="inputContainer">
+                <input class="input" type="text" placeholder="">
+                <label class="label">Graduation</label>
+            </div>
+
+            <div class="inputContainer">
+                <input class="input" type="text" placeholder="">
+                <label class="label">Post Graduation</label>
+            </div>
+
+            <div class="inputContainers">
+                <textarea class="input" style="resize: none !important; padding-top:10px;"></textarea>
+                <label class="label">Experience</label>
+            </div>
+
+            <div class="inputContainer">
+                <input class="input" type="file" placeholder="">
+                <label class="label">Portfolio / Resume / CV</label>
+
+            </div>
+            <input type="submit" class="submitBtn" value="Next">
+        </form>    
+    </div>
+</body>
+</html>

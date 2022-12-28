@@ -1,0 +1,261 @@
+
+body{
+    background-image: url(images/blur.jpg);
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h4{
+  text-align: center;
+}
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: #511B4F;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+.inputContainers{
+  position: relative;
+  height: 120px;
+  width: 90%;
+  margin-bottom: 28px;
+}
+
+/* Style the inputs */
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+/* Hide the placeholder texts (a) */
+
+::placeholder {
+  color: transparent;
+}
+
+/* Styling text labels */
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: #511B4F;
+  color: white;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  background-color: white;
+  transform: translateY(-2px);
+  color:#511B4F;
+}
+
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0E050F;
+}
+
+.input:focus {
+  border: 2px solid #0E050F;
+}
+.input:not(:placeholder-shown)+ .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+}
+p a{
+    color: gray;
+}
+
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .logo{
+    width: 140px;
+ }
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+ }
+ nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+ }
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: hsla(295, 39%, 50%, 0.97);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    display:block;
+    width: fit-content;
+    border:1px solid hsla(295, 41%, 44%, 0.97);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s ;
+}
+.btn:hover{
+    background: hsla(295, 41%, 44%, 0.97);
+}
+
+input[type="date"]{
+    position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+    color: #ffffff;
+}
+
+/*.input[type="date"]:focus {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0E050F;
+}*/
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+
+input[type="file"] {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    width: 75%;
+    /* border: 1px solid white; */
+    /* border-radius: 7px; */
+    font-size: 16px;
+    /* padding: 0 20px; */
+    /* z-index: 1; */
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: all 0.3s;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    padding-left: 30%;
+}
+
+
+.radio {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 78%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    z-index: 1;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: all 0.3s;
+    vertical-align: middle;
+    padding-top: 12px;
+    /* padding-bottom: 11px; */
+    /* padding-left: 6%; */
+}
